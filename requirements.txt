@@ -1,1 +1,2 @@
 requests==2.29.0
+suntime==1.2.5
