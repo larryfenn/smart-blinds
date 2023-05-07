@@ -9,6 +9,7 @@ sun = Sun(40.72118, -73.98347)
 def send_command(action):
     url = f'http://192.168.1.174:8838/neo/v1/transmit?command=008.211-15-{action}&id=CL8oIvtpXVGR_QSd9iOgHA'
     r = session.get(url, timeout=5)
+    print(f'{now}: {action}')
     if r.status_code != 200:
         print(r.text)
 
