@@ -27,7 +27,7 @@ can_close = True
 can_open = True
 
 while True:
-    sun_up = check_sun_state()
+    sun_up = check_sun_up()
     mainroom_co2 = query_sensor('8a93c7')
     bedroom_co2 = query_sensor('dd58e7')
     diff = bedroom_co2 - mainroom_co2
